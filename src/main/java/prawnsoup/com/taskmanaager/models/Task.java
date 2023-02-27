@@ -1,5 +1,6 @@
 package prawnsoup.com.taskmanaager.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -26,6 +27,7 @@ public class Task {
     private Boolean finish; // true if completed false is unfinished
 
     @ManyToOne
+    @JsonIgnore
     private User user; // will automatically create foreign keys for me
 
 

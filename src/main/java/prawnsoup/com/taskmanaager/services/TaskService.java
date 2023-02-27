@@ -13,7 +13,7 @@ import java.util.TimeZone;
 @NoArgsConstructor
 public class TaskService {
 
-    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     private static final String timezone = "GMT+0";
 
     public Date getDate(String taskdate) throws ParseException {

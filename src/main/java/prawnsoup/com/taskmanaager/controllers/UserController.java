@@ -25,18 +25,23 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
-    @Autowired
-    private UserRepository userRepository;
-    @Autowired
+
     private ObjectMapper objectMapper;
 
-    @Autowired
+
     private TaskService taskService;
-    @Autowired
+
     private TaskRepository taskRepository;
 
-    @Autowired
+
     private UserDetailsServiceImpl userDetailsService;
+    @Autowired
+    public UserController(ObjectMapper objectMapper, TaskService taskService, TaskRepository taskRepository, UserDetailsServiceImpl userDetailsService) {
+        this.objectMapper = objectMapper;
+        this.taskService = taskService;
+        this.taskRepository = taskRepository;
+        this.userDetailsService = userDetailsService;
+    }
 
 
     /**
@@ -49,7 +54,7 @@ public class UserController {
     public ResponseEntity<?> addTask(@RequestBody TaskDTO taskDTO){
         //loading with taskkdto
         //convert from taskdto to task object using object mapper.
-        //set task user to be user from user principal , save task to repository
+        // set task user to be user from user principal , save task to repository
        // return updated task dto
        //load current user
 
@@ -67,7 +72,8 @@ public class UserController {
            return ResponseEntity.ok(taskDTO);
        }
        catch (Exception e){
-            return ResponseEntity.badRequest().body("Task not defined correctly");
+           throw new RuntimeException(e);
+         //   return ResponseEntity.badRequest().body("Task not defined correctly");
        }
     }
 

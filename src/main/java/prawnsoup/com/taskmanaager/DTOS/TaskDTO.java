@@ -17,7 +17,7 @@ import java.util.TimeZone;
 //TaskDTO responsible for processing rest controller request and returning JSON responses
 public class TaskDTO {
     @JsonIgnore
-    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     @JsonIgnore
     private static final String timezone = "GMT+0";
 

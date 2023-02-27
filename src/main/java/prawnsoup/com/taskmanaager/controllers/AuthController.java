@@ -31,6 +31,9 @@ public class AuthController {
     @Autowired
     public AuthController(AuthenticationManager authenticationManager , UserRepository userRepository , TokenService tokenService , AuthService userService ) {
         this.authenticationManager = authenticationManager;
+        this.userRepository=userRepository;
+        this.tokenService=tokenService;
+        this.userService=userService;
     }
     /**
 
@@ -57,8 +60,6 @@ public class AuthController {
         userService.register(user);
         return ResponseEntity.ok().build();
     }
-
-
     /**
 
      This endpoint handles user authentication and generates a JWT token.
@@ -94,8 +95,6 @@ public class AuthController {
         return ResponseEntity.ok(token);
 
     }
-
-
 
 
 

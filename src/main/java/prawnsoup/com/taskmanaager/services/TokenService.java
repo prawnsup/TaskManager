@@ -32,7 +32,6 @@ public class TokenService  { //my own implementation of jwttokenprovider basical
 
 
     private  RsaKeyProperties rsaKeyProperties;
-
     public TokenService(JwtEncoder encoder, JwtDecoder decoder , RsaKeyProperties rsaKeyProperties){
         this.encoder=encoder;
         this.decoder=decoder;
