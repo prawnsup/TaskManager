@@ -42,9 +42,9 @@ If everything works as expected then run:
 
 ## Now we can use this token for the rest of the requests like so:
 <img width="1011" alt="Screenshot 2023-02-27 at 23 08 04" src="https://user-images.githubusercontent.com/75863764/221709780-f736742f-8332-406e-bc85-e10403a13c32.png">
-## Here an empty json objects returned since user doesnt have any tasks. But we can add tasks like shown below:
+##  Here an empty json objects returned since user doesnt have any tasks. But we can add tasks like shown below:
 <img width="889" alt="Screenshot 2023-02-27 at 23 19 58" src="https://user-images.githubusercontent.com/75863764/221711490-4a7a3c4a-fa55-4222-9a10-6b6bbea04615.png">
-## Here is added task!
+##  Here is added task!
 <img width="1001" alt="Screenshot 2023-02-27 at 23 39 30" src="https://user-images.githubusercontent.com/75863764/221714126-8bd4729c-ecc0-4cee-a64b-8c01044b5222.png">
 
 There is more that can be done including updating tasks, deleting them and so on.I have documented the REST API endpoints fairly well so I hope what I wanted was made very clear.
