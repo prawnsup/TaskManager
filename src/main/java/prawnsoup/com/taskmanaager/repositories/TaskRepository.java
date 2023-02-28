@@ -7,7 +7,7 @@ import prawnsoup.com.taskmanaager.models.User;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
-
+//Repository for Task entity
 public interface TaskRepository extends JpaRepository<Task , Long> {
 
    // Optional<List<Task>> findAllByUserOrderByTaskIDAsc(User user);

@@ -14,7 +14,6 @@ import prawnsoup.com.taskmanaager.services.TokenService;
 import prawnsoup.com.taskmanaager.services.AuthService;
 
 import java.util.Collections;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")

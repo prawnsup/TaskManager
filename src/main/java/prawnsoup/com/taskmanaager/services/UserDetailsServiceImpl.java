@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import prawnsoup.com.taskmanaager.models.User;
 import prawnsoup.com.taskmanaager.repositories.UserRepository;
 
-import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.Collections;
 import java.util.List;
 

@@ -1,11 +1,9 @@
 package prawnsoup.com.taskmanaager.controllers;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
+
 import org.springframework.web.bind.annotation.*;
 import prawnsoup.com.taskmanaager.DTOS.GetTask;
 import prawnsoup.com.taskmanaager.DTOS.TaskDTO;
@@ -13,7 +11,7 @@ import prawnsoup.com.taskmanaager.DTOS.TaskUpdate;
 import prawnsoup.com.taskmanaager.models.Task;
 import prawnsoup.com.taskmanaager.models.User;
 import prawnsoup.com.taskmanaager.repositories.TaskRepository;
-import prawnsoup.com.taskmanaager.repositories.UserRepository;
+
 import prawnsoup.com.taskmanaager.services.TaskService;
 import prawnsoup.com.taskmanaager.services.UserDetailsServiceImpl;
 import java.text.ParseException;
