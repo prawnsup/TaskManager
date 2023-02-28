@@ -36,18 +36,18 @@ If everything works as expected then run:
 ## To register and login with a user send a request containing a json object like shown in postman here:
 <img width="677" alt="Screenshot 2023-02-27 at 23 05 24" src="https://user-images.githubusercontent.com/75863764/221709445-70dd5811-9a65-4da5-8e08-0ca522c12fe3.png">
 
-# After a succesful login request a bearer authentication token is returned in the body:
+## After a succesful login request a bearer authentication token is returned in the body:
 
 <img width="1013" alt="Screenshot 2023-02-27 at 23 06 41" src="https://user-images.githubusercontent.com/75863764/221709598-32f315cd-d1b7-4cb8-9544-a168fee1c5e2.png">
 
-# Now we can use this token for the rest of the requests like so:
+## Now we can use this token for the rest of the requests like so:
 <img width="1011" alt="Screenshot 2023-02-27 at 23 08 04" src="https://user-images.githubusercontent.com/75863764/221709780-f736742f-8332-406e-bc85-e10403a13c32.png">
-# Here an empty json objects returned since user doesnt have any tasks. But we can add tasks like shown below:
+## Here an empty json objects returned since user doesnt have any tasks. But we can add tasks like shown below:
 <img width="889" alt="Screenshot 2023-02-27 at 23 19 58" src="https://user-images.githubusercontent.com/75863764/221711490-4a7a3c4a-fa55-4222-9a10-6b6bbea04615.png">
-# Here is added task!
+## Here is added task!
 <img width="1001" alt="Screenshot 2023-02-27 at 23 39 30" src="https://user-images.githubusercontent.com/75863764/221714126-8bd4729c-ecc0-4cee-a64b-8c01044b5222.png">
 
-There is more that can be done including updating tasks, deleting them and so on.I have documented the REST API endpoint fairly well so I hope what I wanted was made very clear.
+There is more that can be done including updating tasks, deleting them and so on.I have documented the REST API endpoints fairly well so I hope what I wanted was made very clear.
 
 # Future improvements and a bit of self reflection
 
