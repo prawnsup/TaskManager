@@ -54,6 +54,9 @@ There is more that can be done including updating tasks, deleting them and so on
 # Future improvements and a bit of self reflection
 
 I undertook this project to understand Java web development with Spring Boot and also REST APIs. I plan to use the rest API here to implement a full stack web app with React or Angular in the future.
-Learnt a lot about authentication and every component that goes into backend security.
-I hope to implement refresh and access tokens which will be stored using Redis , I have been experimenting with creating my own filters extended from the do once filter class. Currently there is no remember me functionality but that is definitely  going to be implemented very soon! 
+
+Instead I ended up understanding how much I dont know.
+
+I hope to implement refresh and access tokens which will be stored using Redis , I have been experimenting with creating my own filters extended from the do once filter class. Currently there is no remember me functionality but that is definitely  going to be implemented very soon!
+
 Just after I figure out unit tests for bearer tokens because I have been working on that for too many hours...
