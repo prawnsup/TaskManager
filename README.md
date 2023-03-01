@@ -10,14 +10,19 @@ Then run and initialise mysql.
 Change application properties ,which is located in resources folder, based on username and password.
 
 You might also need to update the hostname in the url for the database since this was developed on a Mac M1 machine where the defaults are different(using UNIX sockets):
+
 from:
+
 jdbc:mysql://mbs.local:3306/task_manager
+
 to:
+
 jdbc:mysql://localhost:3306/task_manager
 
 Then clone this repository.
 
 Run the following commands within root directory:
+
 ./mvnw verify #Ensures that everything works
 
 On a side note , a lot of database connection errors can be fixed by simply checking the mysql server status.Then either starting or restarting the server like so:
@@ -29,7 +34,7 @@ mysql.server start
 mysql.server restart
 
 If everything works as expected then run:
-./mvnw spring-boot:run -X 
+./mvnw spring-boot:run -X #(-X helps with error tracing and debug is enabled by default in application properties)
 
 # Features and API documentation 
 
